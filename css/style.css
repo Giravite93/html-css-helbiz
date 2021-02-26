@@ -14,6 +14,12 @@ ul li {
 	list-style-type: none;
 }
 
+.bg-opt {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 .text-r {
 	text-align: right;
 }
@@ -56,9 +62,6 @@ header .top-nav {
 .jumbotron {
 	background-image: url("../img/hero-bg.jpg");
 	height: 600px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	position: relative;
 }
 .jumbotron .teaser {
@@ -100,6 +103,29 @@ header .top-nav {
 	font-size: 20px;
 }
 
+/*Iphone*/
+.iphone {
+	background-image: url("../img/HelbizBanner.jpg");
+	height: 400px;
+}
+.iphone img {
+	display: block;
+	margin: auto;
+	max-width: 300px;
+	position: relative;
+	top: 15%;
+}
+
+.cursor-iphone .inner-col {
+	padding: 6% 27%;
+}
+.cursor-iphone .inner-col h4 {
+	font-size: 25px;
+}
+.cursor-iphone .inner-col p:last-child {
+	font-size: 10px;
+}
+
 /*RESPONSIVE*/
 @media all and (max-width: 767px) {
 	/*Header*/
@@ -109,6 +135,24 @@ header .top-nav {
 	/*MAIN*/
 	#products .inner-col {
 		padding: 5%;
+	}
+	/*Iphone*/
+	.iphone img {
+		top: 18%;
+	}
+	.cursor-iphone .inner-col {
+		margin-top: 18%;
+		padding: 0;
+	}
+	.cursor-iphone [class*="col-"]:last-child .inner-col {
+		margin-top: 3%;
+	}
+	.cursor-iphone .inner-col p:first-child {
+		font-weight: 600;
+	}
+	.cursor-iphone .inner-col p,
+	.cursor-iphone .inner-col p:last-child {
+		font-size: 20px;
 	}
 }
 
@@ -120,5 +164,12 @@ header .top-nav {
 	/*MAIN*/
 	#products .inner-col {
 		padding: 5%;
+	}
+	/*Iphone*/
+	.iphone img {
+		top: 25%;
+	}
+	.cursor-iphone .inner-col {
+		padding: 6% 30%;
 	}
 }
