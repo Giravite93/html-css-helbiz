@@ -15,8 +15,9 @@ ul li {
 }
 
 .small-wrap {
-	max-width: 80%;
+	max-width: 992px;
 	margin: auto;
+	margin-bottom: 24px;
 }
 .bg-opt {
 	background-repeat: no-repeat;
@@ -34,9 +35,8 @@ ul li {
 /*HEADER*/
 /*Top Nav*/
 header .top-nav {
-	max-width: 900px;
-	margin: auto;
 	padding: 1% 2%;
+	margin-bottom: 0;
 }
 
 /*Menu Nav*/
@@ -148,6 +148,30 @@ header .top-nav {
 }
 .advisor .inner-col p {
 	padding: 3% 0;
+}
+
+/*App and Find*/
+.app-find [class*="col-"]:first-child .inner-col .content-col {
+	background: linear-gradient(#405467, #252f39);
+}
+.app-find [class*="col-"]:last-child .inner-col .content-col {
+	background: linear-gradient(0.25turn, #8395ab, #7a8ea9, #6c83a3);
+}
+.app-find .inner-col .content-col {
+	overflow: hidden;
+	height: 400px;
+}
+.app-find [class*="col-"]:first-child .inner-col {
+	padding-right: 12px;
+}
+.app-find [class*="col-"]:last-child .inner-col {
+	padding-left: 12px;
+}
+.app-find .inner-col p,
+.app-find .inner-col h2,
+.app-find .inner-col a {
+	color: white;
+	padding: 1% 0;
 }
 
 /*RESPONSIVE*/
