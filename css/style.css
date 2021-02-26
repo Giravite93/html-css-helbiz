@@ -14,6 +14,10 @@ ul li {
 	list-style-type: none;
 }
 
+.small-wrap {
+	max-width: 80%;
+	margin: auto;
+}
 .bg-opt {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,9 +34,9 @@ ul li {
 /*HEADER*/
 /*Top Nav*/
 header .top-nav {
+	max-width: 900px;
 	margin: auto;
 	padding: 1% 2%;
-	max-width: 900px;
 }
 
 /*Menu Nav*/
@@ -75,7 +79,7 @@ header .top-nav {
 .jumbotron .teaser h1 {
 	font-size: 60px;
 }
-.jumbotron .teaser p {
+.teaser p {
 	padding: 3% 0;
 	font-size: 23px;
 	font-weight: 400;
@@ -126,6 +130,26 @@ header .top-nav {
 	font-size: 10px;
 }
 
+/*Advisor*/
+.advisor {
+	background-image: url("../img/ScooterHelbiz-2400.jpg");
+	height: 400px;
+}
+.advisor .inner-col {
+	margin-top: 10%;
+	padding: 5% 15%;
+}
+.advisor .inner-col,
+.advisor .inner-col a {
+	color: white;
+}
+.advisor .inner-col h2 {
+	font-size: 50px;
+}
+.advisor .inner-col p {
+	padding: 3% 0;
+}
+
 /*RESPONSIVE*/
 @media all and (max-width: 767px) {
 	/*Header*/
@@ -139,6 +163,9 @@ header .top-nav {
 	/*Iphone*/
 	.iphone img {
 		top: 18%;
+	}
+	.cursor-iphone {
+		margin-bottom: 2%;
 	}
 	.cursor-iphone .inner-col {
 		margin-top: 18%;
@@ -168,6 +195,9 @@ header .top-nav {
 	/*Iphone*/
 	.iphone img {
 		top: 25%;
+	}
+	.cursor-iphone {
+		margin-bottom: 4%;
 	}
 	.cursor-iphone .inner-col {
 		padding: 6% 30%;
