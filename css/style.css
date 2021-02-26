@@ -32,6 +32,12 @@ ul li {
 	text-align: center;
 }
 
+.family .family-banner ul li,
+footer .social ul li {
+	display: inline-block;
+	margin-right: 5%;
+}
+
 /*HEADER*/
 /*Top Nav*/
 header .top-nav {
@@ -189,9 +195,28 @@ header .top-nav {
 	font-size: 40px;
 	padding: 2% 6%;
 }
-.family-banner ul li {
-	display: inline-block;
-	margin-right: 5%;
+
+/*FOOTER*/
+footer {
+	background-color: black;
+	padding: 7%;
+}
+footer .content-col ul li:first-child {
+	text-transform: uppercase;
+}
+footer .content-col ul li a,
+footer .content-col ul li {
+	color: white;
+	line-height: 35px;
+}
+footer .social ul li i {
+	font-size: 30px;
+}
+footer .social .inner-col {
+	padding: 4% 0;
+}
+footer .social a {
+	color: white;
 }
 
 /*RESPONSIVE*/
@@ -234,6 +259,14 @@ header .top-nav {
 	.app-find [class*="col-"]:last-child .inner-col {
 		margin-top: 20px;
 	}
+
+	/*Footer*/
+	footer .footer-menu .container [class*="col-"]:nth-child(2) {
+		margin-bottom: 4%;
+	}
+	footer .social .inner-col {
+		padding: 2% 0;
+	}
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -262,5 +295,13 @@ header .top-nav {
 	}
 	.app-find [class*="col-"]:last-child .inner-col {
 		margin-top: 20px;
+	}
+
+	/*Footer*/
+	footer .footer-menu .container [class*="col-"]:nth-child(2) {
+		margin-bottom: 4%;
+	}
+	footer .social .inner-col {
+		padding: 2% 0;
 	}
 }
