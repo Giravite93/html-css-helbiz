@@ -174,6 +174,26 @@ header .top-nav {
 	padding: 1% 0;
 }
 
+/*Family*/
+.family {
+	background-image: url("../img/Social-Banner.jpg");
+	height: 400px;
+	position: relative;
+}
+.family .family-banner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	font-size: 40px;
+	padding: 2% 6%;
+}
+.family-banner ul li {
+	display: inline-block;
+	margin-right: 5%;
+}
+
 /*RESPONSIVE*/
 @media all and (max-width: 767px) {
 	/*Header*/
@@ -205,6 +225,15 @@ header .top-nav {
 	.cursor-iphone .inner-col p:last-child {
 		font-size: 20px;
 	}
+
+	/*App and Find*/
+	.app-find [class*="col-"]:first-child .inner-col,
+	.app-find [class*="col-"]:last-child .inner-col {
+		padding: 0;
+	}
+	.app-find [class*="col-"]:last-child .inner-col {
+		margin-top: 20px;
+	}
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -225,5 +254,13 @@ header .top-nav {
 	}
 	.cursor-iphone .inner-col {
 		padding: 6% 30%;
+	}
+	/*App and Find*/
+	.app-find [class*="col-"]:first-child .inner-col,
+	.app-find [class*="col-"]:last-child .inner-col {
+		padding: 0;
+	}
+	.app-find [class*="col-"]:last-child .inner-col {
+		margin-top: 20px;
 	}
 }
