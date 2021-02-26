@@ -1,4 +1,7 @@
 /*COMMON*/
+body {
+	font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+}
 img {
 	max-width: 100%;
 }
@@ -75,11 +78,37 @@ header .top-nav {
 	font-weight: 400;
 }
 
+/*MAIN*/
+/*Products*/
+#products .inner-col {
+	padding: 10% 5%;
+}
+#products .content-col {
+	background-color: #fafafa;
+}
+#products .content-col h2 {
+	padding-top: 5%;
+	font-size: 50px;
+	font-weight: 400;
+}
+#products .content-col p {
+	padding: 2%;
+	font-size: 28px;
+	font-weight: 600;
+}
+#products .content-col a {
+	font-size: 20px;
+}
+
 /*RESPONSIVE*/
 @media all and (max-width: 767px) {
 	/*Header*/
 	header .top-nav {
 		padding: 2%;
+	}
+	/*MAIN*/
+	#products .inner-col {
+		padding: 5%;
 	}
 }
 
@@ -87,5 +116,9 @@ header .top-nav {
 	/*Header*/
 	header .top-nav {
 		padding: 2%;
+	}
+	/*MAIN*/
+	#products .inner-col {
+		padding: 5%;
 	}
 }
