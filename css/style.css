@@ -30,7 +30,7 @@ header .top-nav {
 .menu-nav ul li {
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 11px;
 	margin-left: 3px;
 	line-height: 20px;
 }
@@ -47,4 +47,45 @@ header .top-nav {
 }
 .lang ul li:last-child a {
 	border: none;
+}
+
+/*Jumbotron*/
+.jumbotron {
+	background-image: url("../img/hero-bg.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.jumbotron .teaser {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	max-width: 50%;
+}
+.jumbotron .teaser h1 {
+	font-size: 60px;
+}
+.jumbotron .teaser p {
+	padding: 3% 0;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+/*RESPONSIVE*/
+@media all and (max-width: 767px) {
+	/*Header*/
+	header .top-nav {
+		padding: 2%;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	/*Header*/
+	header .top-nav {
+		padding: 2%;
+	}
 }
